@@ -1,7 +1,7 @@
 // import sequelize 
 import { Sequelize } from "sequelize";
 // import connection 
-import db from "../config/database.js";
+import db from "../config/db.config.js";
 
 const { DataTypes } = Sequelize;
  // table define
@@ -17,10 +17,6 @@ const User = db.define('users', {
   freezeTableName: true
 });
 
-(async () => {
-  await Sequelize.sync({ force: true });
 
-
- 
 // Export user
 export default User;

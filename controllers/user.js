@@ -58,7 +58,7 @@ export const deleteUser = async (req, res) => {
             }
         });
         res.status(200).send({
-            "message": "Product Deleted"
+            "message": user Deleted"
         });
     } catch (err) {
         console.log(err);

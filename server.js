@@ -16,12 +16,12 @@ app.use(express.json());
 app.use(cors());
 // Testing database connection
 try {
-    await db.authenticate();
-    console.log('Connection has been established successfully.');
+  await db.authenticate();
+  console.log("Connection has been established successfully.");
 } catch (error) {
-    console.error('500 errors:', error);
+  console.error("500 errors:", error);
 }
 // use router
 app.use(Router);
 // listen on port
-app.listen(5000, () => console.log('Server running at http://localhost:5000'));
+app.listen(5000, () => console.log("Server running at http://localhost:5000"));
